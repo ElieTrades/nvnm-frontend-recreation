@@ -22,3 +22,29 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+
+    .team {
+        padding: 0 24px 100px;
+    }
+
+    .team__projects {
+        flex-direction: column;
+
+        gap: 80px;
+
+        max-width: 100%;
+    }
+
+    .team__projects-inveniam,
+    .team__projects-mantra {
+        width: 100%;
+    }
+
+    .team__projects-inveniam p,
+    .team__projects-mantra p {
+        max-width: 100%;
+    }
+
+}

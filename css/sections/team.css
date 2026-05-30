@@ -1,7 +1,9 @@
 .team {
     background: black;
-    padding: 0 120px 120px 120px;
+    padding: 0 120px 120px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .team__sub-header {
@@ -16,3 +18,60 @@
     margin-bottom: 100px;
 }
 
+.team__projects {
+    display: flex;
+    margin: 0 auto;
+    gap: 80px;
+
+    max-width: 900px;
+}
+
+.team__projects-inveniam {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team__projects-inveniam img {
+    width: 210px;
+    height: auto;
+}
+
+.team__projects-inveniam p {
+    color: rgba(210, 208, 208, 0.7);
+    font-family: "DM Sans", sans-serif;
+    font-size: 15.5px;
+    font-weight: 400;
+
+    margin-top: 30px;
+    text-align: center;
+    opacity: 1;
+    line-height: 26px;
+    max-width: 401px;
+    text-align: start;
+}
+
+.team__projects-mantra {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team__projects-mantra img {
+    width: 105px;
+    height: auto;
+}
+
+.team__projects-mantra p {
+    color: rgba(210, 208, 208, 0.7);
+    font-family: "DM Sans", sans-serif;
+    font-size: 15.5px;
+    font-weight: 400;
+
+    margin-top: 30px;
+    text-align: center;
+    opacity: 1;
+    line-height: 26px;
+    max-width: 390px;
+    text-align: start;
+}
