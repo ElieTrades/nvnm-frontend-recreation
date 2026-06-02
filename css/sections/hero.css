@@ -2,17 +2,14 @@
     display: flex;
     justify-content: center;
 
-    background: radial-gradient(
-    circle at top right,
-    #1658ff 0%,
-    #001a88 22%,
-    #000000 65%);
+    background: black;
 
     position: relative;
     overflow: hidden;
     padding: 74px;
     isolation: isolate;
     
+    z-index: 0;
 }
 
 .hero::before {
@@ -20,24 +17,41 @@
 
     position: absolute;
 
-    width: 1200px;
-    height: 1200px;
+    width: 1500px;
+    height: 1300px;
 
-    left: -600px;
-    top: 900px;
+    bottom: -800px;
+    right: -10px;
+    top: -50px;
 
-    background:
-    radial-gradient(circle,
-    rgba(20, 90, 255, 0.25) 0%,
-    rgba(0,0,0,0) 70%);
+    background: rgba(22, 88, 255, 0.55);
 
+    border-radius: 50%;
     filter: blur(80px);
+
+    z-index: -1;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 1300px;
+    height: 1600px;
+
+    background: black;
 
     border-radius: 50%;
 
-    z-index: 0;
-    inset: -50%;
-    pointer-events: none;
+    transform: rotate(-35deg);
+
+    right: -10px;
+    bottom: -840px;
+
+    filter: blur(40px);
+
+    z-index: -1;
 }
 
 .hero__content h3 {
@@ -82,7 +96,14 @@
     outline: none;
 
     padding: 13px 15px;
-    background-color: rgba(53, 52, 52, 0.756);
+    background: rgba(53, 52, 52, 0.756);
+
+    background: linear-gradient(
+    90deg,
+    rgba(45, 58, 92, 0.8) 0%,
+    rgba(44, 41, 40, 0.9) 18%,
+    rgba(44, 41, 40, 0.9) 100%
+);
     
     font-size: 15px;
     font-family: "Inter", sans-serif;
@@ -95,4 +116,27 @@
 .hero-button__whitepaper:hover {
     background-color: rgba(28, 27, 27, 0.693);
     color: rgba(255, 255, 255, 0.5);
+}
+
+.redirect-roadmap {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.redirect-roadmap p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+
+    color: rgb(155, 154, 154);
+}
+
+.redirect-roadmap img {
+    width: 15px;
+    height: auto;
+    position: relative;
+    top: 1px;
 }
