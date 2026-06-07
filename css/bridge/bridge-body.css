@@ -1,0 +1,31 @@
+body {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.95) 0%,
+            rgba(0, 0, 0, 0.75) 25%,
+            rgba(0, 0, 0, 0.20) 55%,
+            rgba(0, 0, 0, 0.05) 100%
+        ),
+
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.15) 0%,
+            rgba(0, 0, 0, 0.35) 60%,
+            rgba(0, 0, 0, 0.65) 100%
+        ),
+
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(0, 0, 0, 0.45) 0%,
+            rgba(0, 0, 0, 0.25) 25%,
+            transparent 55%
+        ),
+
+        url("../../assets/nvnm-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
