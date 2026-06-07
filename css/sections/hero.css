@@ -85,8 +85,8 @@
     gap: 12px;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-x: visible;
 
     margin-bottom: 40px;
 }
@@ -100,7 +100,7 @@
 
     background: linear-gradient(
     90deg,
-    rgba(45, 58, 92, 0.8) 0%,
+    rgba(45, 52, 72, 0.8) 0%,
     rgba(44, 41, 40, 0.9) 18%,
     rgba(44, 41, 40, 0.9) 100%
 );
@@ -124,6 +124,12 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    text-decoration: none;
+}
+
+.redirect-roadmap p:hover {
+    color: #fff;
 }
 
 .redirect-roadmap p {
@@ -132,6 +138,7 @@
     font-weight: 300;
 
     color: rgb(155, 154, 154);
+    transition: color 0.2s ease;
 }
 
 .redirect-roadmap img {
