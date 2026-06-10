@@ -140,9 +140,10 @@
     cursor: pointer;
 }
 
-.footer__copyright-date img {
+.footer__copyright-date svg {
     width: 13px;
     height: auto;
+    color: grey;
 
     cursor: pointer;
 }
