@@ -27,6 +27,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+    overscroll-behavior: none;
+}
+
 @media (max-width: 768px) {
 
     .team {
@@ -52,3 +56,385 @@
     }
 
 }
+
+@media (max-width: 1400px) {
+    .about__shape {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about {
+        padding: 120px 50px 120px;
+    }
+
+    .about__shape-left {
+        left: -280px;
+    }
+
+    .about__shape-right {
+        right: -280px;
+    }
+
+    .header__nav {
+        padding: 20px 50px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__cta-button {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        top: 1px;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    .about__catalogue {
+        flex-wrap: wrap;
+    }
+
+    .about__card {
+        width: 45%;
+    }
+
+    .about__card-divider {
+        width: 60%;
+        height: 1px;
+    }
+
+    .architecture__container {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .architecture__image-container {
+        width: 930px;
+    }
+
+    .architecture__image-wrapper {
+        width: 100%;
+    }
+
+    .architecture__content {
+        order: 1;
+    }
+
+    .architecture__image {
+        order: 2;
+    }
+
+    .nova__subtitle {
+        font-size: 52px;
+        letter-spacing: 1.9px;
+        line-height: 52px;
+    } 
+
+    .solution__catalogue2 {
+        flex-wrap: wrap;
+    }
+
+    .solution__card2 {
+        width: 45%;
+    }
+
+    .solution {
+        padding: 0 10px 120px;
+    }
+
+    .solution__card2 .solution__card-divider {
+        width: 60%;
+    }
+
+    .verification__container {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .verification__image-container {
+        width: 930px;
+    }
+
+    .verification__image-wrapper {
+        width: 100%;
+    }
+
+    .markets__container {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .markets__image-container {
+        width: 930px;
+    }
+
+    .markets__image-wrapper {
+        width: 100%;
+    }
+
+    .markets__content {
+        order: 1;
+    }
+
+    .markets__image {
+        order: 2;
+    }
+
+    .footer {
+        padding: 90px 30px 30px;
+    }
+
+    .cta {
+        padding: 0 50px 120px;
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+    .header__nav {
+        padding: 20px 50px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__cta-button {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        top: 1px;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    .hero__content h3 {
+        font-size: 56px;
+        line-height: 55px;
+    }
+
+    .about h5 {
+        font-size: 35px;
+    
+        line-height: 38px;
+    }
+
+    .about__contents .nova__subtitle {
+        font-size: 35px;
+        line-height: 32px;
+        letter-spacing: -2px;
+    }
+
+    .about__contents .nova__texts {
+        max-width: 430px;
+    }
+
+    .about__shape {
+        position: absolute;
+        top: 210px;
+        width: 250px;
+        height: 90px;
+    }
+
+    .about__shape-left {
+        left: -280px;
+    }
+
+    .about__shape-right {
+        right: -280px;
+    }
+
+    .about {
+        padding: 60px 30px;
+    }
+
+    .about__catalogue {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .about__card {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        height: 109px;
+    }
+    
+    .about__card-divider {
+        width: 60%;
+    }
+
+    .page-divider {
+        margin-bottom: 30px;
+    }
+
+    .architecture__container {
+        flex-direction: column;
+    }
+
+    .architecture__content {
+        order: 1;
+    }
+
+    .architecture__image {
+        order: 2;
+    }
+
+    .architecture__content .nova__subtitle {
+        font-size: 35px;
+        letter-spacing: -2px;
+        line-height: 35px;
+    }
+
+    .verification__container {
+        flex-direction: column;
+    }
+
+    .verification__content .nova__subtitle {
+        font-size: 35px;
+        letter-spacing: -2px;
+        line-height: 35px;
+    }
+
+
+    .markets__container {
+        flex-direction: column;
+    }
+
+    .markets__content {
+        order: 1;
+    }
+
+    .markets__image {
+        order: 2;
+    }
+
+    .markets__content .nova__subtitle {
+        font-size: 35px;
+        letter-spacing: -2px;
+        line-height: 35px;
+    }
+
+    .team {
+        padding: 0 40px 0;
+    }
+
+    .team__projects-mantra {
+        order: 1;
+    }
+
+    .team__projects-inveniam {
+        order: 2;
+    }
+
+    .team .nova__subtitle {
+        font-size: 35px;
+        line-height: 35px;
+        letter-spacing: -2px;
+    }
+
+    .solution .nova__subtitle {
+        font-size: 35px;
+        line-height: 35px;
+        letter-spacing: -2px;
+    }
+
+    .solution {
+        padding: 60px 30px;
+    }
+
+    .solution__catalogue {
+        flex-direction: column;
+    }
+    
+    .solution__card {
+        width: 100%;
+    }
+
+    .solution__card-divider {
+        width: 60%;
+    }
+    
+    .solution__catalogue2 {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .solution__card2 {
+        width: 100%;
+    }
+
+    .solution__card2 .solution__card-divider {
+        width: 60%;
+    }
+
+    .cta {
+        padding: 0 30px 120px;
+    }
+
+    .cta .nova__subtitle {
+        font-size: 35px;
+        line-height: 35px;
+        letter-spacing: -2px;
+    }
+
+    .cta__container {
+        padding: 60px;
+    }
+
+    .footer {
+        padding: 90px 0 30px;
+    }
+
+    .footer-top__right {
+        flex-direction: column;
+        display: flex;
+        gap: 80px;
+
+        margin-top: 50px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        margin: 0 40px 60px;
+    }
+
+    .footer__page-divider {
+        height: 1px;
+    }
+    
+}
+

@@ -3,7 +3,7 @@
     max-width: 1400px;
     overflow: hidden;
 
-    margin: 0 auto;
+    margin: 120px auto 0;
 
     flex: 1;
 }
@@ -61,6 +61,8 @@
     margin-bottom: 20px;
 }
 
+
+
 .subheader-text {
     color: #dae5ee;
     
@@ -76,10 +78,11 @@
 .content-tags {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
 }
 
 .tag {
-    border: 1px solid rgba(148, 158, 159, 0.127);
+    border: 1px solid rgba(148, 158, 159, 0.227);
     border-radius: 15px;
     background: #5a89b01d;
 
@@ -89,6 +92,8 @@
     padding: 15px;
 
     margin-bottom: 20px;
+
+    backdrop-filter: blur(20px);
 }
 
 .tag-subtitle {
@@ -273,10 +278,10 @@
 }
 
 .max-button {
-    color: #fff;
+    color: rgb(167, 199, 231);
 
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Inter", sans-serif;
 
     opacity: 0.5;
@@ -417,7 +422,9 @@
     color: #fff;
 }
 
-.explorer-link img {
+.explorer-link svg {
     width: 15px;
     height: auto;
+
+    color: #92ddf2;
 }

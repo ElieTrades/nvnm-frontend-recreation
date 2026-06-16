@@ -1,9 +1,11 @@
 .header {
     position: relative;
 
-    position: sticky;
+    position: fixed;
     top: 1px;
-    z-index: 2;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 .header::before {
@@ -13,14 +15,14 @@
     content: "";
     position: absolute;
 
-    width: 400px;
-    height: 70px;
+    width: 300px;
+    height: 50px;
 
-    top: 5px;
-    left: 100px;
+    top: 55px;
+    left: 150px;
     background: #1ea4ed;
 
-    filter: blur(120px);
+    filter: blur(109px);
 
     z-index: -1;
     pointer-events: none;
@@ -114,3 +116,28 @@
 .cta-button:hover {
     background: rgb(134, 234, 244)
 }
+
+.mobile-menu {
+    display: none;
+
+    cursor: pointer;
+}
+
+.mobile-menu svg {
+    color: #fff;
+    width: 20px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.header-content__center,
+.header__cta-button {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 64px;
+}
+
+

@@ -12,6 +12,10 @@
     
     line-height: 56px;
     font-weight: 400;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
 }
 
 .about__visuals {
@@ -39,8 +43,13 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
+
+
 .about__contents .nova__texts {
-    margin-top: 20px;
+    max-width: 500px;
+    line-height: 26px;
+
+    margin: 20px auto 0;
 }
 
 .about__shape {
@@ -170,7 +179,7 @@
 
 .about__card-divider {
     width: 100%;
-    height: 2px;
+    height: 1.5px;
 
     background: linear-gradient(
         90deg,

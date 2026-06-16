@@ -71,6 +71,7 @@
 
     width: 510px;
     height: 510px;
+    padding: 9px;
 
     border: 1.5px solid rgba(27, 26, 26, 0.973);
 
@@ -197,6 +198,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-shrink: 0;
 }
 
 .check-icon img {
