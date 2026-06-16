@@ -23,9 +23,10 @@
 
     padding: 50px 50px;
 
-    border: 1px solid rgba(255, 255, 255, 0.089);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
 
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
 
     background:
         radial-gradient(
@@ -40,7 +41,6 @@
             #080f1e 55%,
             #050810 100%
         );
-    border: 1px solid rgba(255, 255, 255, 0.08);
 
     border-radius: 30px;
 
@@ -66,6 +66,8 @@
     font-size: 34px;
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
+
+    max-width: 600px;
 }
 
 .email-input p {

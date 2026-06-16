@@ -56,6 +56,12 @@
     z-index: -1;
 }
 
+.roadmap__hero .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 
 .roadmap__hero .architecture__badge {
     margin: 0 auto;
@@ -70,7 +76,7 @@
 }
 
 .roadmap__hero .hero__content h3 {
-    margin-top: 40px;
+    margin: 40px auto 0;
 }
 
 /*CARDS SECTION*/
@@ -89,24 +95,26 @@
 
     padding: 40px 30px;
 
-    border: 1px solid rgba(255, 255, 255, 0.089);
+    max-width: 950px;
+    width: 100%;
 
-    width: 950px;
+    border: none;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
 
-    background:
-        radial-gradient(
-            ellipse at -10% 110%,      
-            rgba(22, 88, 255, 0.45) 0%,
-            rgba(10, 30, 100, 0.2) 40%,
-            transparent 65%
+    background: radial-gradient(
+        ellipse at -10% 110%,      
+        rgba(22, 88, 255, 0.45) 0%,
+        rgba(10, 30, 100, 0.2) 40%,
+        transparent 65%
         ),
+        
         radial-gradient(
-            ellipse at 25% 55%,        
-            #0d2151 0%,
-            #080f1e 55%,
-            #050810 100%
-        );
-    border: 1px solid rgba(255, 255, 255, 0.08);
+        ellipse at 25% 55%,        
+        #0d2151 0%,
+        #080f1e 55%,
+        #050810 100%
+        
+    );
 
     border-radius: 30px;
 
@@ -251,9 +259,11 @@
 
     padding: 40px 30px;
 
-    border: 1px solid rgba(255, 255, 255, 0.089);
+    border: none;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
 
-    width: 950px;
+    max-width: 950px;
+    width: 100%;
 
     background:
         radial-gradient(
@@ -268,7 +278,6 @@
             #080f1e 55%,
             #050810 100%
         );
-    border: 1px solid rgba(255, 255, 255, 0.08);
 
     border-radius: 30px;
 
@@ -287,7 +296,8 @@
 
     border: 1px solid rgba(255, 255, 255, 0.089);
 
-    width: 950px;
+    max-width: 950px;
+    width: 100%;
 
     background:
         radial-gradient(
@@ -334,6 +344,11 @@
 
 .roadmap__team-note {
     margin-top: 100px;
+}
+
+.roadmap__team-note .nova__subtitle {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .roadmap__team-note .nova__subtitle span {
