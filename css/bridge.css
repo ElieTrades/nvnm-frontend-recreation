@@ -19,6 +19,8 @@ html {
     min-height: 100vh;
 }
 
+
+
 /*html::before {
     content: "";
     position: fixed;      
@@ -98,7 +100,7 @@ li {
             transparent 55%
         ),
 
-        url("../../assets/nvnm-bg.png");
+        url("../assets/nvnm-bg.png");
 
     background-size: cover;
     background-position: center;
@@ -136,13 +138,6 @@ li {
     z-index: 100;
     }
     
-
-}
-
-@media (max-width: 760px) {
-    .body-content {
-        padding: 40px 20px;
-    }
 }
 
 
@@ -151,6 +146,11 @@ li {
     .body-layout {
         grid-template-columns: 1fr;
         margin: 90px auto 0;
+    }
+
+    .body-content {
+        padding: 0px 0px 50px;
+        margin: 40px auto 0;
     }
 
     .body-content__left h1,
@@ -189,6 +189,15 @@ li {
 
 @media (max-width: 760px) {
 
+    .body-content {
+        padding: 0px 0px 50px;
+        margin: 150px auto 0;
+    }
+
+    .body-layout {
+        margin: 0 auto;
+    }
+
     .content-tags {
         display: flex;
         flex-direction: column;
@@ -199,6 +208,7 @@ li {
     .tag {
         width: 100%;
         margin-bottom: 10px;
+        max-width: 530px;
     }
 
     .content-wrapper {
@@ -218,6 +228,29 @@ li {
 
     .token-selector {
         padding: 9px 10px;
+    }
+
+    .body-content__left h1 {
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: -1.44px;
+        max-width: 500px;
+    }
+
+    .subheader-text  {
+        font-size: 16px;
+        line-height: 32px;
+        max-width: 500px;
+    }
+
+    .bridge-guide {
+        max-width: 530px;
+        width: 100%;
+    } 
+
+    .activity-tab {
+        max-width: 530px;
+        width: 100%;
     }
 }
 
