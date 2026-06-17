@@ -67,7 +67,6 @@ body {
 html,
 body {
     min-height: 100vh;
-    overflow-x: hidden;
 }
 
 li {
@@ -208,13 +207,13 @@ li {
     .tag {
         width: 100%;
         margin-bottom: 10px;
-        max-width: 530px;
+        max-width: 508px;
     }
 
     .content-wrapper {
         margin-top: 30px;
         width: 100%;
-        max-width: 530px;
+        max-width: 508px;
     }
     
     .token-input {
@@ -228,6 +227,10 @@ li {
 
     .token-selector {
         padding: 9px 10px;
+    }
+
+    .body-content__left {
+        max-width: 508px;
     }
 
     .body-content__left h1 {
@@ -244,14 +247,19 @@ li {
     }
 
     .bridge-guide {
-        max-width: 530px;
+        max-width: 508px;
         width: 100%;
     } 
 
     .activity-tab {
-        max-width: 530px;
+        max-width: 508px;
         width: 100%;
     }
+
+    .body-content__right {
+        max-width: 508px;
+    }
+    
 }
 
 @media (max-width: 800px) {
@@ -260,6 +268,7 @@ li {
     }
     
     .footer__container {
+        display: flex;
         flex-direction: column;
     }
 
@@ -302,5 +311,66 @@ li {
     .footer {
         padding: 30px 30px;
     }
+}
+
+@media (max-width: 400px) {
+    .body-content {
+        padding: 0px 30px 50px;
+        margin: 150px auto 0;
+    }
+
+    .bridge-guide {
+        max-width: 400px;
+        width: 100%;
+    } 
+
+    .activity-tab {
+        max-width: 400px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .explorer-link {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .body-content__right {
+        max-width: 400px;
+    }
+
+    .tag {
+        width: 100%;
+        margin-bottom: 10px;
+        max-width: 400px;
+    }
+
+    .content-wrapper {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .input-selectors {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .token-input {
+        max-width: 97%;
+        width: 100%;
+    }
+
+    .token-selector {
+        max-width: 97%;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+    
 }
 
