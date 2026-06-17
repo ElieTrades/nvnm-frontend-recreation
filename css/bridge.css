@@ -67,6 +67,7 @@ body {
 html,
 body {
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 li {
@@ -302,3 +303,4 @@ li {
         padding: 30px 30px;
     }
 }
+
